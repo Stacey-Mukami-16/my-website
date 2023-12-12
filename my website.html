@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+    
+        nav {
+            background-color: #444;
+            padding: 1em;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 1em;
+        }
+        section {
+            padding: 1em;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+        #submit-button{
+            background-color: white;
+            color:black;
+            font-weight: bold;
+            border-radius:15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Kenya Airways</h1>
+        <p>The Pride of Africa</p>
+    </header>
+
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="kenya airways.jpg">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Your about us content goes here.</p>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <!-- Your gallery content goes here -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="/submit-form" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Send a messsage" required></textarea><br>
+
+            <input type="submit" value="Submit" id="submit-button">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Your Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
