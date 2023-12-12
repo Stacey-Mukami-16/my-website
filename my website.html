@@ -13,17 +13,18 @@
         }
         header {
             background-color: #333;
-            color: #fff;
+            color: red;
             padding: 1em;
             text-align: center;
-    
+        }
         nav {
             background-color: #444;
             padding: 1em;
             text-align: center;
         }
         nav a {
-            color: #fff;
+            color:orangered;
+            cursor:pointer;
             text-decoration: none;
             padding: 1em;
         }
@@ -40,16 +41,21 @@
             text-align: center;
             padding: 1em;
         }
-        #submit-button{
-            background-color: white;
+        .submit-button{
+            background-color:palevioletred;
             color:black;
-            font-weight: bold;
-            border-radius:15px;
-            cursor: pointer;
-            transition: box-shadow 0.5s;
+            font-weight:bold;
+            border-radius:5px;
+            padding-bottom: 5px;
+            padding-top: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
+            box-shadow: 5px 5px 10px grey;
         }
-        #submit-button:hover{
-            box-shadow: 5px 10px 10px grey;
+        #book-here{
+            color:palevioletred;
+            cursor:pointer;
+        }
     </style>
 </head>
 <body>
@@ -57,39 +63,44 @@
     <header>
         <h1>Kenya Airways</h1>
         <p>The Pride of Africa</p>
+        <hr>
+
     </header>
-
-
+    <br>
     <nav>
-        <a href="#about">About</a>
-        <a href="kenya airways.jpg">Gallery</a>
+        <a href="#book-a-flight">Book a flight</a>
+        <a href="#gallery">About</a>
         <a href="#contact">Contact</a>
     </nav>
 
     <section id="about">
         <h2>About Us</h2>
-        <p>Your about us content goes here.</p>
+        <p>We want to give you the best experience</p>
     </section>
 
     <section id="gallery">
-        <h2>Gallery</h2>
-        <!-- Your gallery content goes here -->
+        <h2>Book a Flight</h2>
+        <a id="book-here">Book here</a>
+        <img src="https://www.kenya-airways.com/en/route-planner/"
     </section>
 
     <section id="contact">
         <h2>Contact Us</h2>
         <form action="/submit-form" method="post">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <br>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+            <input type="email" id="email" name="email" placeholder= "Enter you email" required>
+            <br>
 
             <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" placeholder="Send a messsage" required></textarea><br>
+            <textarea id="message" name="message" rows="4" placeholder="Send a message" required></textarea>
+            <br>
 
-            <input type="submit" value="Submit" id="submit-button">
         </form>
+    <button class="submit-button">Submit</button>
     </section>
 
     <footer>
